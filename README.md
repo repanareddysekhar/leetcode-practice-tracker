@@ -22,6 +22,7 @@ Updated on 2024-06-03T01:13:19.534081 UTC
 # Array
 |  |
 | ------- |
+| [0200-number-of-islands](https://github.com/repanareddysekhar/leetcode-practice-tracker/tree/master/0200-number-of-islands) |
 | [0735-asteroid-collision](https://github.com/repanareddysekhar/leetcode-practice-tracker/tree/master/0735-asteroid-collision) |
 # Stack
 |  |
@@ -31,3 +32,19 @@ Updated on 2024-06-03T01:13:19.534081 UTC
 |  |
 | ------- |
 | [0735-asteroid-collision](https://github.com/repanareddysekhar/leetcode-practice-tracker/tree/master/0735-asteroid-collision) |
+# Depth-First Search
+|  |
+| ------- |
+| [0200-number-of-islands](https://github.com/repanareddysekhar/leetcode-practice-tracker/tree/master/0200-number-of-islands) |
+# Breadth-First Search
+|  |
+| ------- |
+| [0200-number-of-islands](https://github.com/repanareddysekhar/leetcode-practice-tracker/tree/master/0200-number-of-islands) |
+# Union Find
+|  |
+| ------- |
+| [0200-number-of-islands](https://github.com/repanareddysekhar/leetcode-practice-tracker/tree/master/0200-number-of-islands) |
+# Matrix
+|  |
+| ------- |
+| [0200-number-of-islands](https://github.com/repanareddysekhar/leetcode-practice-tracker/tree/master/0200-number-of-islands) |
