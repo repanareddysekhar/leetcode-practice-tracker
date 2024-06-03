@@ -1,29 +1,32 @@
 class Solution {
     public int numIslands(char[][] grid) {
-        if(null == grid || grid.length < 1 || grid[0].length < 1) return 0;
-
-        int cnt = 0;
-
-        for(int i=0; i<grid.length; i++) {
+        int noOfIslands = 0;
+        if(null == grid || grid.length < 1 || grid[0].length < 1)
+            return noOfIslands;
+        
+        for(int i=0; i<grid.length; i++)
             for(int j=0; j<grid[0].length; j++) {
                 if(grid[i][j] == '1') {
                     DFSUtil(grid, i, j);
-                    cnt++;
-                } 
+                    noOfIslands++;
+                }
             }
-        }
 
-        return cnt;
+        return noOfIslands;
     }
 
-    private void DFSUtil(char[][] grid, int r, int c) {
-        if(r >= grid.length || c >= grid[0].length || r < 0 || c < 0 || grid[r][c] == '0')
+    private void DFSUtil(char[][] grid, int row, int col) {
+        if(!isSafe(grid, row, col))
             return;
-        
-        grid[r][c] = '0';
-        DFSUtil(grid, r-1, c);
-        DFSUtil(grid, r+1, c);
-        DFSUtil(grid, r, c-1);
-        DFSUtil(grid, r, c+1);
+
+        grid[row][col] = '0';
+        DFSUtil(grid, row+1, col);
+        DFSUtil(grid, row-1, col);
+        DFSUtil(grid, row, col+1);
+        DFSUtil(grid, row, col-1);
+    }
+
+    private boolean isSafe(char[][] grid, int row, int col) {
+        return row >= 0 && col >= 0 && row < grid.length && col < grid[0].length && grid[row][col] == '1';
     }
 }
